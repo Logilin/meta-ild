@@ -18,5 +18,5 @@ do_compile() {
 do_install() {
 	oe_runmake modules_install DESTDIR=${D}
 	install -d ${D}${bin}
-	install -m 755 ${S}/test-mmap ${D}${sbin}
+	install -m 755 ${S}/test-mmap ${D}${sbindir}
 }
