@@ -6,7 +6,8 @@ LIC_FILES_CHKSUM = "file://${WORKDIR}/git/LICENSE;md5=e8c1458438ead3c34974bc0be3
 
 inherit module
 
-SRC_URI = "git://github.com/logilin/ild;protocol=https;branch=master;rev=9.11"
+SRC_URI = "git://github.com/logilin/ild;protocol=https;branch=master"
+SRCREV = "${AUTOREV}
 
 S = "${WORKDIR}/git/exemples/01-noyau-et-modules"
 
