@@ -20,3 +20,5 @@ do_install() {
 	install -d ${D}${sbindir}
 	install -m 755 ${S}/test-mmap ${D}${sbindir}
 }
+
+FILES:${PN} += "/usr/sbin/test-mmap"

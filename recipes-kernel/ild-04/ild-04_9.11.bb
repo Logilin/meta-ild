@@ -22,3 +22,4 @@ do_install() {
 	install -m 755 ${S}/ioctl-example-IV-06  ${D}${sbindir}
 }
 
+FILES:${PN} += "/usr/sbin/ioctl-example-IV-06"
