@@ -18,6 +18,7 @@ do_compile() {
 
 do_install() {
 	oe_runmake modules_install DESTDIR=${D}
+	install -d ${D}${sbindir}
 	install -m 755 ${S}/ioctl-example-IV-06  ${D}${sbindir}
 }
 
